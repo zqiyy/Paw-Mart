@@ -1,0 +1,1136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paw Mart | Toko Kebutuhan Peliharaan</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg bg-body-tertiary nvbar">
+  <div class="container-fluid text-white bg-c-nude">
+    <a class="navbar-brand me-5 align-items-center d-flex " href="home.html" >
+        <img src="Paw_Mart__9_-removebg-preview.png" alt="paw mart" width="220" height="160" class="d-inline-block align-text-top me-3 logo">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link font-nav" aria-current="page" href="home.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link font-nav" href="ourstory.html">Our Story</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link font-nav" href="produk.html">Produk</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle font-nav" href= "home.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Lainnya
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item coklat-muda" href="faq.html" >FAQ's</a></li>
+            <li><a class="dropdown-item coklat-muda" href="kontak.html">Kontak</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control" type="search" placeholder="Search" aria-label="Search"/>
+        <button class="btn text-white bg-c-tua" type="submit">Search</button>
+      </form>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="container my-4">
+  <div class="row g-3 align-items-center">
+    <div class="col-1">
+    </div>
+    <div class="col-lg-3 col-md-4 mb-4">
+      <div class="position-sticky rounded atas-filter">            
+        <h2 class="mb-4 filter coklat-tua">FILTER</h2>
+        <div class="mb-4">
+          <h5 class="mb-3 jenis-filter coklat-tua">Kategori</h5>           
+          <div class="form-check mb-2">
+              <input class="form-check-input" style="background-color: #988877;" type="checkbox" value="semua-kategori" id="filterAllKategori">
+              <label class="form-check-label coklat-tua" for="filterAllKategori">
+              Semua Produk
+              </label>
+          </div>            
+          <div class="form-check mb-2">
+            <input class="form-check-input" style="background-color: #988877;" type="checkbox" value="makanan-kucing" id="filterMakananKucing">
+            <label class="form-check-label coklat-tua" for="filterMakananKucing">
+            Makanan Kucing
+            </label>
+          </div>
+          <div class="form-check mb-2">
+            <input class="form-check-input" style="background-color: #988877;" type="checkbox" value="makanan-anjing" id="filterMakananAnjing">
+            <label class="form-check-label coklat-tua" for="filterMakananAnjing">
+            Makanan Anjing
+            </label>
+          </div>            
+          <div class="form-check mb-2">
+            <input class="form-check-input" style="background-color: #988877;" type="checkbox" value="mainan" id="filterMainan">
+            <label class="form-check-label coklat-tua" for="filterMainan">
+            Mainan
+            </label>
+          </div>           
+          <div class="form-check mb-2">
+            <input class="form-check-input " style="background-color: #988877;" type="checkbox" value="aksesoris" id="filterAksesoris">
+            <label class="form-check-label coklat-tua" for="filterAksesoris">
+            Aksesoris
+            </label>
+          </div>
+        </div>
+        <hr>
+        <div class="mb-4">
+          <h5 class="mb-3 jenis-filter coklat-tua">Harga</h5>
+          <div class="form-check mb-2">
+            <input class="form-check-input" style="background-color: #988877;" type="checkbox" value="semua-harga" id="filterAllHarga">
+            <label class="form-check-label coklat-tua" for="filterAllHarga">
+            Semua Harga
+            </label>
+          </div>            
+          <div class="form-check mb-2">
+            <input class="form-check-input" style="background-color: #988877;" type="checkbox" value="kurang-dari-100rb" id="filterKurangDari100rb">
+            <label class="form-check-label coklat-tua" for="filterKurangDari100rb">
+            &lt; Rp 100.000
+            </label>
+          </div>
+          <div class="form-check mb-2">
+            <input class="form-check-input" style="background-color: #988877;" type="checkbox" value="100rb-sampai-250rb" id="filter100rb-250rb">
+            <label class="form-check-label coklat-tua" for="filter100rb-250rb">
+            Rp 100.000 - Rp 250.000
+            </label>
+          </div>            
+          <div class="form-check mb-2">
+            <input class="form-check-input" style="background-color: #988877;" type="checkbox" value="250rb-sampai-500rb" id="filter250rb-500rb">
+            <label class="form-check-label coklat-tua" for="filter250rb-500rb">
+            Rp 250.000 - Rp 500.000
+            </label>
+          </div>            
+          <div class="form-check mb-2">
+            <input class="form-check-input" style="background-color: #988877;" type="checkbox" value="lebih-dari-500rb" id="filterLebihDari500rb">
+            <label class="form-check-label coklat-tua" for="filterLebihDari500rb">
+            &gt; Rp 500.000
+            </label>
+          </div>
+        </div>
+        <hr>
+        <div class="mb-4">
+          <h5 class="mb-3 jenis-filter coklat-tua">Urutkan</h5>
+          <div class="form-check mb-2">
+            <input class="form-check-input" style="background-color: #988877;" type="checkbox" value="a-z" id="filterAtoZ">
+            <label class="form-check-label coklat-tua" for="filterAtoZ">
+            A-Z
+            </label>
+          </div>
+          <div class="form-check mb-2">
+            <input class="form-check-input" style="background-color: #988877;" type="checkbox" value="z-a" id="filterZtoA">
+            <label class="form-check-label coklat-tua" for="filterZtoA">
+            Z-A
+            </label>
+          </div>
+          <div class="form-check mb-2">
+            <input class="form-check-input" style="background-color: #988877;" type="checkbox" value="terbaru" id="filterTerbaru">
+            <label class="form-check-label coklat-tua" for="filterTerbaru">
+            Terbaru
+            </label>
+          </div>
+          <div class="form-check mb-2">
+            <input class="form-check-input" style="background-color: #988877;" type="checkbox" value="populer" id="filterPalingPopuler">
+            <label class="form-check-label coklat-tua" for="filterPalingPopuler">
+            Paling Populer
+            </label>
+          </div>
+          <div class="form-check mb-2">
+            <input class="form-check-input" style="background-color: #988877;" type="checkbox" value="harga-rendah" id="filterHargaTerendah">
+            <label class="form-check-label coklat-tua" for="filterHargaTerendah">
+            Harga Terendah
+            </label>
+          </div>           
+          <div class="form-check mb-2">
+            <input class="form-check-input" style="background-color: #988877;" type="checkbox" value="harga-tinggi" id="filterHargaTertinggi">
+            <label class="form-check-label coklat-tua" for="filterHargaTertinggi">
+            Harga Tertinggi
+            </label>
+          </div>
+        </div>
+        <hr>
+        <div class="mb-4">
+          <h5 class="mb-3 jenis-filter coklat-tua">Brand</h5>
+          <div class="form-check mb-2">
+            <input class="form-check-input" style="background-color: #988877;" type="checkbox" value="semua-brand" id="filterAllBrand">
+            <label class="form-check-label coklat-tua" for="filterAllBrand">
+            Semua Brand
+            </label>
+          </div>            
+          <div class="form-check mb-2">
+            <input class="form-check-input" style="background-color: #988877;" type="checkbox" value="royalcanin" id="filterRoyalCanin">
+            <label class="form-check-label coklat-tua" for="filterRoyalCanin">
+            Royal Canin
+            </label>
+          </div>
+          <div class="form-check mb-2">
+            <input class="form-check-input" style="background-color: #988877;" type="checkbox" value="proplan" id="filterProPlan">
+            <label class="form-check-label coklat-tua" for="filterProPlan">
+            Pro Plan
+            </label>
+          </div>            
+          <div class="form-check mb-2">
+            <input class="form-check-input" style="background-color: #988877;" type="checkbox" value="pedigree" id="filterPadigree">
+            <label class="form-check-label coklat-tua" for="filterPadigree">
+            Padigree
+            </label>
+          </div>            
+          <div class="form-check mb-2">
+            <input class="form-check-input" style="background-color: #988877;" type="checkbox" value="benebone" id="filterBenebone">
+            <label class="form-check-label coklat-tua" for="filterBenebone">
+            Benebone
+            </label>
+          </div>
+        </div>
+        <button class="btn text-white w-100 bg-c-tua" type="button">
+        Hapus Filter
+        </button>            
+      </div>
+    </div>
+    <div class="col-lg-7 col-md-8">
+        <nav class="navbar navbar-expand-lg navbar-dark cart-navbar mb-3">
+            <div class="container d-flex justify-content-end">
+                <button class="btn cart" onclick="toggleCart()">
+                    <i class="bi bi-cart"></i> Keranjang (<span id="cartBadge">0</span>)
+                </button>
+            </div>
+        </nav>
+        <div class="row g-4 " id="productContainer">
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="image.png" class="card-img-top gmbr-produk" alt="Makanan Kucing">
+                    <div class="card-body">
+                        <h5 class="card-title coklat-tua">Royal Canin Hair & Skin Care Cat Food</h5>
+                        <p class="card-text coklat-tua">Rp. 87.000</p>
+                        <br>
+                        <p class="penilaian"><i class="bi bi-star-fill" style="color: #debc2a;"></i> 5,0 &nbsp; 10rb+ Terjual</p>
+                        <button class="btn bg-c-tua text-white w-100 mb-2"
+                            onclick="addToCart('Royal Canin Hair & Skin Care Cat Food', 87000, 'image.png')">
+                            Tambah ke Keranjang
+                        </button>
+                        <button class="btn w-100 border bg-white coklat-tua"
+                            onclick="showProductDetail('rc-hair-n-skincare')">
+                            Lihat Detail
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="Purina-Pro-Plan-Puppy-Dry-Dog-Food-for-Under-1-Year-Real-Chicken-Rice-34-lb-Bag_5f82e175-a5ce-4add-98e0-e7c601205a42.a9cc9594c4ce8ef2e7da8427170ed99a.png" class="card-img-top gmbr-produk" alt="Makanan Anak Anjing">
+                    <div class="card-body">
+                        <h5 class="card-title coklat-tua">Pro Plan Puppy Under 1 Year</h5>
+                        <p class="card-text coklat-tua">Rp. 175.900</p>
+                        <br>
+                        <p class="penilaian"><i class="bi bi-star-fill" style="color: #debc2a;"></i> 5,0 &nbsp; 7rb+ Terjual</p>
+                        <button class="btn bg-c-tua text-white w-100 mb-2"
+                            onclick="addToCart('Pro Plan Puppy Under 1 Year', 175900, 'Purina-Pro-Plan-Puppy-Dry-Dog-Food-for-Under-1-Year-Real-Chicken-Rice-34-lb-Bag_5f82e175-a5ce-4add-98e0-e7c601205a42.a9cc9594c4ce8ef2e7da8427170ed99a.png')">
+                            Tambah ke Keranjang
+                        </button>
+                        <button class="btn w-100 border bg-white coklat-tua"
+                            onclick="showProductDetail('proplan-u-1th')">
+                            Lihat Detail
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="pedigree_pedigree_beef_-_vegetables_makanan_anjing_-20_kg-_full01_8helhpe-removebg-preview.png" class="card-img-top gmbr-produk" alt="Makanan Kucing">
+                    <div class="card-body">
+                        <h5 class="card-title coklat-tua">Padigree Adult Beef & Vegetable Dog Food</h5>
+                        <p class="card-text coklat-tua">Rp. 859.000</p>
+                        <br>
+                        <p class="penilaian"><i class="bi bi-star-fill" style="color: #debc2a;"></i> 3,9 &nbsp; 4rb+ Terjual</p>
+                        <button class="btn bg-c-tua text-white w-100 mb-2"
+                            onclick="addToCart('Padigree Adult Beef & Vegetable Dog Food', 859000, 'pedigree_pedigree_beef_-_vegetables_makanan_anjing_-20_kg-_full01_8helhpe-removebg-preview.png')">
+                            Tambah ke Keranjang
+                        </button>
+                        <button class="btn w-100 border bg-white coklat-tua"
+                            onclick="showProductDetail('pedigree')">
+                            Lihat Detail
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="th-11134207-7r98u-losfccwiviv1d0.png" class="card-img-top gmbr-produk" alt="cat-litter">
+                    <div class="card-body">
+                        <h5 class="card-title coklat-tua">Lola & Co Tofu Cat Litter</h5>
+                        <p class="card-text coklat-tua">Rp. 99.900</p>
+                        <br>
+                        <p class="penilaian"><i class="bi bi-star-fill" style="color: #debc2a;"></i> 5,0 &nbsp; 6rb+ Terjual</p>
+                        <button class="btn bg-c-tua text-white w-100 mb-2"
+                            onclick="addToCart('Lola & Co Tofu Cat Litter', 99900, 'th-11134207-7r98u-losfccwiviv1d0.png')">
+                            Tambah ke Keranjang
+                        </button>
+                        <button class="btn w-100 border bg-white coklat-tua"
+                            onclick="showProductDetail('lola-co')">
+                            Lihat Detail
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="Benebone-Bacon-Stick-Durable-Dog-Chew-Toy-Medium_2add0ce5-9bf7-4fcb-bcac-03e469761cff.c4a61a9cae8935446881b791aff3fb00.png" class="card-img-top gmbr-produk" alt="tulang kunyah anjing">
+                    <div class="card-body">
+                        <h5 class="card-title coklat-tua">Benebone Bacon Stick Medium</h5>
+                        <p class="card-text coklat-tua">Rp. 70.000</p>
+                        <br>
+                        <p class="penilaian"><i class="bi bi-star-fill" style="color: #debc2a;"></i> 5,0 &nbsp; 9rb+ Terjual</p>
+                        <button class="btn bg-c-tua text-white w-100 mb-2"
+                            onclick="addToCart('Benebone Bacon Stick Medium', 70000, 'Benebone-Bacon-Stick-Durable-Dog-Chew-Toy-Medium_2add0ce5-9bf7-4fcb-bcac-03e469761cff.png')">
+                            Tambah ke Keranjang
+                        </button>
+                        <button class="btn w-100 border bg-white coklat-tua"
+                            onclick="showProductDetail('benebone')">
+                            Lihat Detail
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="Img_skudo_6-removebg-preview.png" class="card-img-top gmbr-produk" alt="pet-cargo">
+                    <div class="card-body">
+                        <h5 class="card-title coklat-tua">Pet Cargo Skudo IATA 6</h5>
+                        <p class="card-text coklat-tua">Rp. 980.900</p>
+                        <br>
+                        <p class="penilaian"><i class="bi bi-star-fill" style="color: #debc2a;"></i> 4,0 &nbsp; 1rb+ Terjual</p>
+                        <button class="btn bg-c-tua text-white w-100 mb-2"
+                            onclick="addToCart('Pet Cargo Skudo IATA 6', 980900, 'Img_skudo_6-removebg-preview.png')">
+                            Tambah ke Keranjang
+                        </button>
+                        <button class="btn w-100 border bg-white coklat-tua"
+                            onclick="showProductDetail('pet-cargo-1')">
+                            Lihat Detail
+                        </button>
+                    </div>
+                </div>
+              </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                  <img src="image copy 5.png" class="card-img-top gmbr-produk" alt="hernes">
+                    <div class="card-body">
+                      <h5 class="card-title coklat-tua">Zee Dog H3D Jelly Softerwalk Harness</h5>
+                      <p class="card-text coklat-tua">Rp. 420.900</p>
+                      <br>
+                      <p class="penilaian"><i class="bi bi-star-fill" style="color: #debc2a;"></i> 3,9 &nbsp; 1rb+ Terjual</p>
+                      <button class="btn bg-c-tua text-white w-100 mb-2"
+                        onclick="addToCart('Zee Dog H3D Jelly Softerwalk Harness', 420900, 'image copy 5.png')">
+                        Tambah ke Keranjang
+                      </button>
+                      <button class="btn w-100 border bg-white coklat-tua"
+                        onclick="showProductDetail('hernes')">
+                        Lihat Detail
+                      </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                  <img src="image copy 4.png" class="card-img-top gmbr-produk" alt="mao-mao">
+                    <div class="card-body">
+                      <h5 class="card-title coklat-tua">Mao Mao Cat Litter Tofu 7ltr</h5>
+                      <p class="card-text coklat-tua">Rp. 52.900</p>
+                      <br>
+                      <p class="penilaian"><i class="bi bi-star-fill" style="color: #debc2a;"></i> 3,2 &nbsp; 2rb+ Terjual</p>
+                      <button class="btn bg-c-tua text-white w-100 mb-2"
+                        onclick="addToCart('Mao Mao Cat Litter Tofu 7ltr', 52900, 'image copy 4.png')">
+                        Tambah ke Keranjang
+                      </button>
+                      <button class="btn w-100 border bg-white coklat-tua"
+                        onclick="showProductDetail('mao-mao')">
+                        Lihat Detail
+                      </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                  <img src="image copy 3.png" class="card-img-top gmbr-produk" alt="npsc-dogfood">
+                    <div class="card-body">
+                      <h5 class="card-title coklat-tua">Nature's Protection White Dog Adult</h5>
+                      <p class="card-text coklat-tua">Rp. 920.900</p>
+                      <br>
+                      <p class="penilaian"><i class="bi bi-star-fill" style="color: #debc2a;"></i> 4,2 &nbsp; 2rb+ Terjual</p>
+                      <button class="btn bg-c-tua text-white w-100 mb-2"
+                        onclick="addToCart('Natures Protection White Dog Adult', 920900, 'image copy 3.png')">
+                        Tambah ke Keranjang
+                      </button>
+                      <button class="btn w-100 border bg-white coklat-tua"
+                        onclick="showProductDetail('npsc-dogfood')">
+                        Lihat Detail
+                      </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                  <img src="image copy 2.png" class="card-img-top gmbr-produk" alt="rc-siam">
+                    <div class="card-body">
+                      <h5 class="card-title coklat-tua">Royal Canin Siamese Cat Adult</h5>
+                      <p class="card-text coklat-tua">Rp. 739.900</p>
+                      <br>
+                      <p class="penilaian"><i class="bi bi-star-fill" style="color: #debc2a;"></i> 4,9 &nbsp; 2rb+ Terjual</p>
+                      <button class="btn bg-c-tua text-white w-100 mb-2"
+                        onclick="addToCart('Royal Canin Siamese Cat Adult', 739900, 'image copy 2.png')">
+                        Tambah ke Keranjang
+                      </button>
+                      <button class="btn w-100 border bg-white coklat-tua"
+                        onclick="showProductDetail('rc-siamese')">
+                        Lihat Detail
+                      </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                  <img src="image copy.png" class="card-img-top gmbr-produk" alt="pet-cargo-2">
+                    <div class="card-body">
+                      <h5 class="card-title coklat-tua">Pet Pawradise Pet Cargo Jumbo</h5>
+                      <p class="card-text coklat-tua">Rp. 190.900</p>
+                      <br>
+                      <p class="penilaian"><i class="bi bi-star-fill" style="color: #debc2a;"></i> 3,9 &nbsp; 3000 Terjual</p>
+                      <button class="btn bg-c-tua text-white w-100 mb-2"
+                        onclick="addToCart('Pet Pawradise Pet Cargo Jumbo', 190900, 'image copy.png')">
+                        Tambah ke Keranjang
+                      </button>
+                      <button class="btn w-100 border bg-white coklat-tua"
+                        onclick="showProductDetail('pet-cargo-2')">
+                        Lihat Detail
+                      </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                  <img src="image copy 6.png" class="card-img-top gmbr-produk" alt="pg">
+                    <div class="card-body">
+                      <h5 class="card-title coklat-tua">Cat wall playground / Cat Tree</h5>
+                      <p class="card-text coklat-tua">Rp. 559.000</p>
+                      <br>
+                      <p class="penilaian"><i class="bi bi-star-fill" style="color: #debc2a;"></i> 4,9 &nbsp; 2rb+ Terjual</p>
+                      <button class="btn bg-c-tua text-white w-100 mb-2"
+                        onclick="addToCart('Cat wall playground / Cat Tree', 559000, 'image copy 6.png')">
+                        Tambah ke Keranjang
+                      </button>
+                      <button class="btn w-100 border bg-white coklat-tua"
+                        onclick="showProductDetail('pg')">
+                        Lihat Detail
+                      </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                  <img src="image copy 7.png" class="card-img-top gmbr-produk" alt="vitamin">
+                    <div class="card-body">
+                      <h5 class="card-title coklat-tua">Multivitamin Chews for Dogs</h5>
+                      <p class="card-text coklat-tua">Rp. 285.000</p>
+                      <br>
+                      <p class="penilaian"><i class="bi bi-star-fill" style="color: #debc2a;"></i> 4,9 &nbsp; 5rb+ Terjual</p>
+                      <button class="btn bg-c-tua text-white w-100 mb-2"
+                        onclick="addToCart('Multivitamin Chews for Dogs', 285000, 'image copy 7.png')">
+                        Tambah ke Keranjang
+                      </button>
+                      <button class="btn w-100 border bg-white coklat-tua"
+                        onclick="showProductDetail('vitamin')">
+                        Lihat Detail
+                      </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                  <img src="image copy 8.png" class="card-img-top gmbr-produk" alt="hrc-persian">
+                    <div class="card-body">
+                      <h5 class="card-title coklat-tua">Royal Canin Persian Kitten </h5>
+                      <p class="card-text coklat-tua">Rp. 300.000</p>
+                      <br>
+                      <p class="penilaian"><i class="bi bi-star-fill" style="color: #debc2a;"></i> 4,5 &nbsp; 2rb+ Terjual</p>
+                      <button class="btn bg-c-tua text-white w-100 mb-2"
+                        onclick="addToCart('Royal Canin Persian Kitten', 300000, 'image copy 8.png')">
+                        Tambah ke Keranjang
+                      </button>
+                      <button class="btn w-100 border bg-white coklat-tua"
+                        onclick="showProductDetail('rc-persian')">
+                        Lihat Detail
+                      </button>
+                    </div>
+                </div>
+            </div> 
+            <div class="col-md-4">
+                <div class="card mb-4">
+                  <img src="image copy 9.png" class="card-img-top gmbr-produk" alt="rc-puppy">
+                    <div class="card-body">
+                      <h5 class="card-title coklat-tua">Royal Canin Puppy Mini</h5>
+                      <p class="card-text coklat-tua">Rp. 700.000</p>
+                      <br>
+                      <p class="penilaian"><i class="bi bi-star-fill" style="color: #debc2a;"></i> 4,5 &nbsp; 2rb+ Terjual</p>
+                      <button class="btn bg-c-tua text-white w-100 mb-2"
+                        onclick="addToCart('Royal Canin Puppy Mini', 700000, 'image copy 9.png')">
+                        Tambah ke Keranjang
+                      </button>
+                      <button class="btn w-100 border bg-white coklat-tua"
+                        onclick="showProductDetail('rc-puppy')">
+                        Lihat Detail
+                      </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                  <img src="image copy 10.png" class="card-img-top gmbr-produk" alt="benebone-fish">
+                    <div class="card-body">
+                      <h5 class="card-title coklat-tua">Benebone Fishbone Medium Jack Salmon</h5>
+                      <p class="card-text coklat-tua">Rp. 375.000</p>
+                      <br>
+                      <p class="penilaian"><i class="bi bi-star-fill" style="color: #debc2a;"></i> 4,7 &nbsp; 3rb+ Terjual</p>
+                      <button class="btn bg-c-tua text-white w-100 mb-2"
+                        onclick="addToCart('Benebone Fishbone Medium Jack Salmon', 375000, 'image copy 10.png')">
+                        Tambah ke Keranjang
+                      </button>
+                      <button class="btn w-100 border bg-white coklat-tua"
+                        onclick="showProductDetail('benebone-fish')">
+                        Lihat Detail
+                      </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                  <img src="image copy 11.png" class="card-img-top gmbr-produk" alt="rc-indoor">
+                    <div class="card-body">
+                      <h5 class="card-title coklat-tua">Royal Canin Indoor Long Hair Cat</h5>
+                      <p class="card-text coklat-tua">Rp. 489.000</p>
+                      <br>
+                      <p class="penilaian"><i class="bi bi-star-fill" style="color: #debc2a;"></i> 4,5 &nbsp; 2rb+ Terjual</p>
+                      <button class="btn bg-c-tua text-white w-100 mb-2"
+                        onclick="addToCart('Royal Canin Indoor Long Hair Cat', 489000, 'image copy 11.png')">
+                        Tambah ke Keranjang
+                      </button>
+                      <button class="btn w-100 border bg-white coklat-tua"
+                        onclick="showProductDetail('rc-indoor')">
+                        Lihat Detail
+                      </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                  <img src="image copy 12.png" class="card-img-top gmbr-produk" alt="cat-toy">
+                    <div class="card-body">
+                      <h5 class="card-title coklat-tua">AimayaPet Mainan Kucing Dengan Laser</h5>
+                      <p class="card-text coklat-tua">Rp. 95.000</p>
+                      <br>
+                      <p class="penilaian"><i class="bi bi-star-fill" style="color: #debc2a;"></i> 4,9 &nbsp; 7rb+ Terjual</p>
+                      <button class="btn bg-c-tua text-white w-100 mb-2"
+                        onclick="addToCart('AimayaPet Mainan Kucing Dengan Laser', 95000, 'image copy 12.png')">
+                        Tambah ke Keranjang
+                      </button>
+                      <button class="btn w-100 border bg-white coklat-tua"
+                        onclick="showProductDetail('cat-toy')">
+                        Lihat Detail
+                      </button>
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <nav aria-label="Page navigation example">
+            <ul class="pagination">
+                <li class="page-item"><a class="page-link coklat-tua" href="javascript:void(0)" onclick="changePage(currentPage - 1)">Previous</a></li>
+                <li class="page-link coklat-tua" href="javascript:void(0)" onclick="changePage(1)">1</a></li>
+                <li class="page-link coklat-tua" href="javascript:void(0)" onclick="changePage(2)">2</a></li>
+                <li class="page-link coklat-tua" href="javascript:void(0)" onclick="changePage(3)">3</a></li>
+                <li class="page-link coklat-tua" href="javascript:void(0)" onclick="changePage(currentPage + 1)">Next</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="col-1">
+    </div>
+  </div>
+</div>
+
+<div class="cart-overlay" id="cartOverlay" onclick="toggleCart()"></div>
+<div class="cart-sidebar" id="cartSidebar">
+  <div class="cart-header">
+    <div class="d-flex justify-content-between align-items-center">
+      <h4 class="mb-0"><i class="bi bi-cart3 me-2"></i>Keranjang Belanja</h4>
+      <button class="btn btn-sm text-white" onclick="toggleCart()">
+        <i class="bi bi-x-lg" style="font-size: 1.5rem;"></i>
+      </button>
+    </div>
+  </div>
+  <div class="cart-body" id="cartBody">
+    <div class="empty-cart">
+      <i class="bi bi-cart-x"></i>
+      <h5 class="mt-3">Keranjang Kosong</h5>
+      <p>Belum ada produk di keranjang</p>
+    </div>
+  </div>
+  <div class="cart-footer">
+    <div class="d-flex justify-content-between mb-3">
+      <h5>Total:</h5>
+      <h5 class="coklat-tua" id="cartTotal">Rp 0</h5>
+    </div>
+    <button class="btn w-100 text-white bg-c-tua" onclick="checkoutFlik()">
+      <i class="bi bi-credit-card me-2"></i>Checkout via Flik
+    </button><br><br>
+    <button class="btn w-100 bg-c-tua text-white" onclick="checkoutWhatsApp()">
+        <i class="bi bi-whatsapp me-2 text-white"></i>Checkout via WhatsApp
+    </button>
+  </div>
+</div>
+
+<br><br><br><br><br><br>
+<footer class="py-5 bg-c-nude">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="text-center mb-4">
+          <img src="Paw_Mart__9_-removebg-preview.png" alt="Paw Mart" class="mb-3" style="width: 150px;">
+        </div>
+        <div class="d-flex justify-content-center gap-3">
+          <a href="tiktok.com" class="text-muted fs-4"><i class="bi bi-tiktok"></i></a>
+          <a href="instagram.com" class="text-muted fs-4"><i class="bi bi-instagram"></i></a>
+          <a href="youtube.com" class="text-muted fs-4"><i class="bi bi-youtube"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-4">
+        <h5 class="fw-bold mb-3 coklat-tua">Produk</h5>
+          <ul class="list-unstyled">
+              <li class="mb-2">
+                  <a href="produk.html?filter=makanan-kucing" class="text-decoration-none coklat-tua">Makanan Kucing</a>
+              </li>
+              <li class="mb-2">
+                  <a href="produk.html?filter=makanan-anjing" class="text-decoration-none coklat-tua">Makanan Anjing</a>
+              </li>
+              <li class="mb-2">
+                  <a href="produk.html?filter=aksesoris" class="text-decoration-none coklat-tua">Aksesoris</a>
+              </li>
+              <li class="mb-2">
+                  <a href="produk.html?filter=mainan" class="text-decoration-none coklat-tua">Mainan</a>
+              </li>
+          </ul>
+      </div>
+
+      <div class="col-lg-2 col-md-6 mb-4">
+        <h5 class="fw-bold mb-3 coklat-tua">Informasi</h5>
+        <ul class="list-unstyled">
+          <li class="mb-2"><a href="faq.html" class="text-decoration-none coklat-tua">FAQ's</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4">
+        <h5 class="fw-bold mb-3 coklat-tua">Temukan Kami</h5>
+        <ul class="list-unstyled">
+          <li class="mb-2"><a href="kontak.html" class="text-decoration-none coklat-tua">Hubungi Kami</a></li>
+        </ul>
+      </div>
+      <div class="container">
+        <div class="text-center">
+          <p class="mb-0 coklat-muda">© 2025 PawMart. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> 
+<script src="produkLengkap.js"></script>   
+<script>
+  let cart = [];
+  function toggleCart() {
+    const sidebar = document.getElementById('cartSidebar');
+    const overlay = document.getElementById('cartOverlay');
+    sidebar.classList.toggle('active');
+    overlay.classList.toggle('active');
+  }
+  function addToCart(name, price, image) {
+    const existing = cart.find(item => item.name === name);
+    if (existing) {
+      existing.quantity++;
+    } else {
+       cart.push({ 
+         name: name, 
+         price: price, 
+         quantity: 1,
+         image: image 
+        });
+      }
+      updateCart();
+      alert('Produk ditambahkan ke keranjang!');
+    }
+    function updateQuantity(index, change) {
+      cart[index].quantity += change;
+      if (cart[index].quantity <= 0) {
+        cart.splice(index, 1);
+      }
+      updateCart();
+    }
+    function removeItem(index) {
+      cart.splice(index, 1);
+      updateCart();
+    }
+    function updateCart() {
+      const cartBody = document.getElementById('cartBody');
+      const cartTotal = document.getElementById('cartTotal');
+      const cartBadge = document.getElementById('cartBadge');
+      const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
+      const totalPrice = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+        
+      if (totalItems > 0) {
+          cartBadge.textContent = totalItems;
+          cartBadge.style.display = 'inline-block';
+        } else {
+          cartBadge.style.display = 'none';
+        }
+        
+      cartTotal.textContent = `Rp ${totalPrice.toLocaleString('id-ID')}`;
+      
+      if (cart.length === 0) {
+         cartBody.innerHTML = `
+         <div class="empty-cart">
+          <i class="bi bi-cart-x"></i>
+          <h5 class="mt-3">Keranjang Kosong</h5>
+          <p>Belum ada produk di keranjang</p>
+          </div>
+          `;
+        } else {
+          let html = '';
+          cart.forEach((item, index) => {
+            html += `
+            <div class="cart-item">
+              <img src="${item.image}" alt="${item.name}" class="cart-item-image">
+              <div class="cart-item-details">
+                <h6 class="mb-1">${item.name}</h6>
+                <p class="text-muted mb-0">Rp ${item.price.toLocaleString('id-ID')}</p>
+                <div class="quantity-controls">
+                  <button class="quantity-btn" onclick="updateQuantity(${index}, -1)">-</button>
+                  <span>${item.quantity}</span>
+                  <button class="quantity-btn" onclick="updateQuantity(${index}, 1)">+</button>
+                  <button class="btn btn-sm btn-danger ms-auto" onclick="removeItem(${index})">
+                    <i class="bi bi-trash"></i>
+                    </button>
+                </div>
+              </div>
+            </div>
+            `;
+          });
+          cartBody.innerHTML = html;
+        }
+      }
+    function checkoutFlik() {
+      if (cart.length === 0) {
+        alert('Keranjang masih kosong!');
+        return;
+      }
+      const flikStoreURL = 'https://flik.co.id/store/www.pawmart.com/';
+      if (confirm('Lanjutkan ke Flik untuk checkout?')) {
+        window.open(flikStoreURL, '_blank');
+      }
+    } 
+    function checkoutWhatsApp() {
+      if (cart.length === 0) {
+          alert('Keranjang masih kosong!');
+          return;
+      }
+      
+      let message = 'Halo, saya mau order:%0A%0A';
+      let total = 0;
+      
+      cart.forEach((item, index) => {
+          const subtotal = item.price * item.quantity;
+          total += subtotal;
+          message += `${index + 1}. ${item.name}%0A`;
+          message += `   ${item.quantity}x @ Rp ${item.price.toLocaleString('id-ID')}%0A`;
+          message += `   Subtotal: Rp ${subtotal.toLocaleString('id-ID')}%0A%0A`;
+      });
+      
+      message += `Total: Rp ${total.toLocaleString('id-ID')}`;
+      
+      const waNumber = '6281234567890';
+      const waURL = `https://wa.me/${waNumber}?text=${message}`;
+      
+      window.open(waURL, '_blank');
+  } 
+
+  window.addEventListener('DOMContentLoaded', function() {
+      showPage(1);
+  });
+
+  document.addEventListener('DOMContentLoaded', function() {
+      setupFilterListeners();
+  });
+
+  function setupFilterListeners() {
+      const allCheckboxes = document.querySelectorAll('input[type="checkbox"]');
+      allCheckboxes.forEach(checkbox => {
+          checkbox.addEventListener('change', applyAllFilters);
+      });
+      
+      const resetBtn = document.querySelector('.btn.bg-c-tua.w-100[type="button"]');
+      if (resetBtn) {
+          resetBtn.addEventListener('click', resetAllFilters);
+      }
+  }
+  function applyAllFilters() {
+      const allProducts = Object.keys(productsData).map(key => {
+          const product = productsData[key];
+          
+          let category = 'kategori';
+          const nameLower = product.name.toLowerCase();
+          
+          if (nameLower.includes('cat') || nameLower.includes('kucing') || nameLower.includes('kitten')) {
+              if (nameLower.includes('litter')) {
+                category = 'aksesoris';
+              } else if (nameLower.includes('siamese') || nameLower.includes('persian') || nameLower.includes('indoor') || nameLower.includes('hair') || nameLower.includes('kitten')){
+                  category = 'makanan-kucing'
+              } else if (nameLower.includes('tree') ||nameLower.includes('laser') ) {
+                category = 'mainan';
+              }
+          } else if (nameLower.includes('dog') || nameLower.includes('anjing') || nameLower.includes('puppy') || nameLower.includes('pet') || nameLower.includes('benebone')) {
+              if (nameLower.includes('chew') || nameLower.includes('toy') || nameLower.includes('benebone')) {
+                  category = 'mainan';
+              } else if (nameLower.includes('harness') || nameLower.includes('cargo') || nameLower.includes('vitamin')) {
+                  category = 'aksesoris';
+              } else {
+                  category = 'makanan-anjing';
+              }
+          }
+
+          let brand = 'generic';
+          if (nameLower.includes('royal canin')) brand = 'royalcanin';
+          else if (nameLower.includes('pro plan')) brand = 'proplan';
+          else if (nameLower.includes('pedigree') || nameLower.includes('padigree')) brand = 'pedigree';
+          else if (nameLower.includes('benebone')) brand = 'benebone';
+          
+          return {
+              id: key,
+              name: product.name,
+              price: product.price,
+              image: product.image,
+              rating: product.rating,
+              sold: product.sold,
+              category: category,
+              brand: brand
+          };
+      });
+      
+      let filtered = filterByCategory(allProducts);
+      filtered = filterByPrice(filtered);
+      filtered = filterByBrand(filtered);
+      filtered = sortProducts(filtered);
+      displayFilteredProducts(filtered);
+  }
+  function filterByCategory(products) {
+      const categoryCheckboxes = {
+          'filterAllKategori': 'semua',
+          'filterMakananKucing': 'makanan-kucing',
+          'filterMakananAnjing': 'makanan-anjing',
+          'filterMainan': 'mainan',
+          'filterAksesoris': 'aksesoris'
+      };
+      
+      const selectedCategories = [];
+      
+      for (let id in categoryCheckboxes) {
+          const checkbox = document.getElementById(id);
+          if (checkbox && checkbox.checked) {
+              selectedCategories.push(categoryCheckboxes[id]);
+          }
+      }
+      if (selectedCategories.length === 0 || selectedCategories.includes('semua')) {
+          return products;
+      }
+      return products.filter(product => selectedCategories.includes(product.category));
+  }
+  function filterByPrice(products) {
+      const priceCheckboxes = {
+          'filterAllHarga': 'semua',
+          'filterKurangDari100rb': '0-100000',
+          'filter100rb-250rb': '100000-250000',
+          'filter250rb-500rb': '250000-500000',
+          'filterLebihDari500rb': '500000-999999999'
+      };
+      
+      const selectedPrices = [];
+      
+      for (let id in priceCheckboxes) {
+          const checkbox = document.getElementById(id);
+          if (checkbox && checkbox.checked) {
+              selectedPrices.push(priceCheckboxes[id]);
+          }
+      }
+      if (selectedPrices.length === 0 || selectedPrices.includes('semua')) {
+          return products;
+      }
+      return products.filter(product => {
+          return selectedPrices.some(range => {
+              const [min, max] = range.split('-').map(Number);
+              return product.price >= min && product.price <= max;
+          });
+      });
+  }
+  function filterByBrand(products) {
+      const brandCheckboxes = {
+          'filterAllBrand': 'semua',
+          'filterRoyalCanin': 'royalcanin',
+          'filterProPlan': 'proplan',
+          'filterPadigree': 'pedigree',
+          'filterBenebone': 'benebone'
+      };
+      
+      const selectedBrands = [];
+      
+      for (let id in brandCheckboxes) {
+          const checkbox = document.getElementById(id);
+          if (checkbox && checkbox.checked) {
+              selectedBrands.push(brandCheckboxes[id]);
+          }
+      }
+      if (selectedBrands.length === 0 || selectedBrands.includes('semua')) {
+          return products;
+      }
+      return products.filter(product => selectedBrands.includes(product.brand));
+  }
+  function sortProducts(products) {
+      const sortCheckboxes = {
+          'filterAtoZ': 'a-z',
+          'filterZtoA': 'z-a',
+          'filterHargaTerendah': 'price-low',
+          'filterHargaTertinggi': 'price-high',
+          'filterPalingPopuler': 'popular',
+          'filterTerbaru': 'newest'
+      };
+      
+      let selectedSort = null;
+      for (let id in sortCheckboxes) {
+          const checkbox = document.getElementById(id);
+          if (checkbox && checkbox.checked) {
+              selectedSort = sortCheckboxes[id];
+              for (let otherId in sortCheckboxes) {
+                  if (otherId !== id) {
+                      const otherCheckbox = document.getElementById(otherId);
+                      if (otherCheckbox) otherCheckbox.checked = false;
+                  }
+              }
+              break;
+          }
+      }
+      const sorted = [...products];
+      
+      if (selectedSort === 'a-z') {
+          sorted.sort((a, b) => a.name.localeCompare(b.name));
+      } else if (selectedSort === 'z-a') {
+          sorted.sort((a, b) => b.name.localeCompare(a.name));
+      } else if (selectedSort === 'price-low') {
+          sorted.sort((a, b) => a.price - b.price);
+      } else if (selectedSort === 'price-high') {
+          sorted.sort((a, b) => b.price - a.price);
+      } else if (selectedSort === 'popular') {
+          sorted.sort((a, b) => b.rating - a.rating);
+      }
+      
+      return sorted;
+  }
+  function displayFilteredProducts(products) {
+      const container = document.getElementById('productContainer');
+      
+      if (!container) return;
+      container.innerHTML = '';
+      if (products.length === 0) {
+          container.innerHTML = `
+              <div class="col-12 text-center py-5">
+                  <i class="bi bi-inbox" style="font-size: 4rem; color: #ccc;"></i>
+                  <h5 class="mt-3 text-muted">Produk tidak ditemukan</h5>
+                  <p class="text-muted">Coba ubah filter atau kata kunci pencarian</p>
+                  <button class="btn bg-c-tua text-white" onclick="resetAllFilters()">
+                      Reset Filter
+                  </button>
+              </div>
+          `;
+          return;
+      }
+      products.forEach(product => {
+          const soldText = product.sold >= 1000 ? 
+              `${(product.sold/1000).toFixed(0)}rb+` : 
+              `${product.sold}`;
+          
+          const productCard = `
+              <div class="col-md-4">
+                  <div class="card mb-4 h-100">
+                      <img src="${product.image}" class="card-img-top gmbr-produk" alt="${product.name}">
+                      <div class="card-body d-flex flex-column">
+                          <h5 class="card-title coklat-tua">${product.name}</h5>
+                          <p class="card-text coklat-tua fw-bold">Rp ${product.price.toLocaleString('id-ID')}</p>
+                          <p class="penilaian"><i class="bi bi-star-fill" style="color: #debc2a;"></i> ${product.rating} ${soldText} Terjual</p>
+                          <button class="btn bg-c-tua text-white w-100 mb-2 mt-auto"
+                              onclick="addToCart('${product.name}', ${product.price}, '${product.image}')">
+                              Tambah ke Keranjang
+                          </button>
+                          <button class="btn w-100 border bg-white coklat-tua"
+                              onclick="showProductDetail('${product.id}')">
+                              Lihat Detail
+                          </button>
+                      </div>
+                  </div>
+              </div>
+          `;
+          
+          container.insertAdjacentHTML('beforeend', productCard);
+      });
+      showPage(1);
+  }
+  function resetAllFilters() {
+      const allCheckboxes = document.querySelectorAll('input[type="checkbox"]');
+      allCheckboxes.forEach(checkbox => {
+          checkbox.checked = false;
+      });
+      applyAllFilters();
+      
+      console.log('Filter direset');
+  }
+
+  let currentPage = 1;
+  const itemsPerPage = 6;
+
+  function showPage(page) {
+      const cards = document.querySelectorAll('#productContainer .col-md-4');
+      const totalPages = Math.ceil(cards.length / itemsPerPage);
+      
+      if (page < 1) page = 1;
+      if (page > totalPages) page = totalPages;
+      
+      const start = (page - 1) * itemsPerPage;
+      const end = start + itemsPerPage;
+      
+      cards.forEach((card, index) => {
+          if (index >= start && index < end) {
+              card.style.display = '';
+          } else {
+              card.style.display = 'none';
+          }
+      });
+      
+      currentPage = page;
+      updatePaginationButtons();
+  }
+
+  function changePage(page) {
+      showPage(page);
+      window.scrollTo({ top: 300, behavior: 'smooth' });
+  }
+
+  function updatePaginationButtons() {
+      const cards = document.querySelectorAll('#productContainer .col-md-4');
+      const totalPages = Math.ceil(cards.length / itemsPerPage);
+      
+      const pageItems = document.querySelectorAll('.pagination .page-item');
+      pageItems.forEach((item, index) => {
+          if (index > 0 && index <= 3) {
+              if (index === currentPage) {
+                  item.classList.add('active');
+              } else {
+                  item.classList.remove('active');
+              }
+          }
+      });
+      
+      const prevBtn = pageItems[0];
+      const nextBtn = pageItems[pageItems.length - 1];
+      
+      if (currentPage === 1) {
+          prevBtn.classList.add('disabled');
+      } else {
+          prevBtn.classList.remove('disabled');
+      }
+      
+      if (currentPage === totalPages) {
+          nextBtn.classList.add('disabled');
+      } else {
+          nextBtn.classList.remove('disabled');
+      }
+  }
+
+  const searchForm = document.querySelector('form[role="search"]');
+  const searchInput = searchForm.querySelector('input[type="search"]');
+  const searchButton = searchForm.querySelector('button[type="submit"]');
+  searchForm.addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    const searchValue = searchInput.value.toLowerCase().trim();
+    
+    if (searchValue === '') {
+      alert('Silakan ketik produk yang ingin dicari!');
+      return;
+    }
+    
+    window.location.href = `produk.html?search=${encodeURIComponent(searchValue)}`;
+  });
+
+  window.addEventListener('DOMContentLoaded', function() {
+      const urlParams = new URLSearchParams(window.location.search);
+      const filter = urlParams.get('filter');
+      
+      if (filter) {
+          applyFooterFilter(filter);
+      }
+      
+      showPage(1);
+  });
+
+  function applyFooterFilter(filterType) {
+      document.querySelectorAll('input[type="checkbox"]').forEach(cb => cb.checked = false);
+
+      if (filterType === 'makanan-kucing') {
+          document.getElementById('filterMakananKucing').checked = true;
+      } else if (filterType === 'makanan-anjing') {
+          document.getElementById('filterMakananAnjing').checked = true;
+      } else if (filterType === 'aksesoris') {
+          document.getElementById('filterAksesoris').checked = true;
+      } else if (filterType === 'mainan') {
+          document.getElementById('filterMainan').checked = true;
+      }
+      
+      applyAllFilters();
+  }
+
+  document.querySelectorAll('footer a[href*="tiktok"]').forEach(link => {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      window.open('https://www.tiktok.com/', '_blank');
+    });
+  });
+
+  document.querySelectorAll('footer a[href*="instagram"]').forEach(link => {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      window.open('https://www.instagram.com/', '_blank');
+    });
+  });
+
+  document.querySelectorAll('footer a[href*="youtube"]').forEach(link => {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      window.open('https://www.youtube.com/', '_blank');
+  });
+});
+
+</script>
+</body>
+</html>
