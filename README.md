@@ -47,20 +47,20 @@ Di bagian bawah halaman terdapat Google Maps Integration yang menampilkan lokasi
 
 ## Screenshot Website
 
-###Halaman Home
+### Halaman Home
 <img width="1920" height="1128" alt="Screenshot 2025-10-20 115527" src="https://github.com/user-attachments/assets/75a67d32-ce6d-46b7-b2b3-dc83234e362c" />
 <img width="1920" height="1128" alt="Screenshot 2025-10-20 115527" src="https://github.com/user-attachments/assets/5a4a35dd-14c2-4394-a0aa-aff942fc21e4" />
 <img width="1920" height="1128" alt="Screenshot 2025-10-20 115550" src="https://github.com/user-attachments/assets/259d5069-c7fd-42ee-8856-9ec3fae77312" />
 <img width="1920" height="1128" alt="Screenshot 2025-10-20 115600" src="https://github.com/user-attachments/assets/a58092ab-fa7e-40e5-8c39-2350d54248e1" />
 <img width="1920" height="1128" alt="Screenshot 2025-10-20 115608" src="https://github.com/user-attachments/assets/44076b72-9341-4717-8cf7-35a015447cbe" />
 
-###Halaman Our Story
+### Halaman Our Story
 <img width="1920" height="1128" alt="Screenshot 2025-10-20 115622" src="https://github.com/user-attachments/assets/8f91b33d-036d-4c8c-b59c-b4ae6abce1b2" />
 <img width="1920" height="1128" alt="Screenshot 2025-10-20 115635" src="https://github.com/user-attachments/assets/7bdd40b9-35b3-426f-84e0-cc12c817566c" />
 <img width="1920" height="1128" alt="Screenshot 2025-10-20 115646" src="https://github.com/user-attachments/assets/1adaac22-8a8b-407d-9ce5-afd6b78f0fbd" />
 <img width="1920" height="1128" alt="Screenshot 2025-10-20 115708" src="https://github.com/user-attachments/assets/f3368bb2-6e21-4ad2-b0a3-940707fffbc1" />
 
-###Halaman Produk
+### Halaman Produk
 <img width="1920" height="1128" alt="Screenshot 2025-10-20 115726" src="https://github.com/user-attachments/assets/c9b3f4c6-d867-4d62-8229-e867a32a7c44" />
 <img width="1920" height="1128" alt="Screenshot 2025-10-20 115741" src="https://github.com/user-attachments/assets/25682797-3645-41c1-87ac-ed695f9e7b22" />
 <img width="1920" height="1128" alt="Screenshot 2025-10-20 115753" src="https://github.com/user-attachments/assets/43b11e21-3f27-46db-9e32-94e4b74ec138" />
@@ -70,11 +70,11 @@ Di bagian bawah halaman terdapat Google Maps Integration yang menampilkan lokasi
 <img width="1920" height="1128" alt="Screenshot 2025-10-20 115852" src="https://github.com/user-attachments/assets/3481cadd-ed48-4259-81a7-502cfcdf8ec5" />
 <img width="1920" height="1128" alt="Screenshot 2025-10-20 115859" src="https://github.com/user-attachments/assets/59e9e8fc-aab0-42a1-963e-61724c4b1b68" />
 
-###Halaman FAQ's
+### Halaman FAQ's
 <img width="1920" height="1128" alt="Screenshot 2025-10-20 115913" src="https://github.com/user-attachments/assets/c79df487-771a-4c3e-9903-de19f7c98514" />
 <img width="1920" height="1128" alt="Screenshot 2025-10-20 115924" src="https://github.com/user-attachments/assets/2e932ad0-0737-4c8c-8a5e-28ad6f413001" />
 
-###Halaman Kontak
+### Halaman Kontak
 <img width="1920" height="1128" alt="Screenshot 2025-10-20 115934" src="https://github.com/user-attachments/assets/bc03243b-3391-4b70-af87-d6e8a2fd4106" />
 <img width="1920" height="1128" alt="Screenshot 2025-10-20 115941" src="https://github.com/user-attachments/assets/361e04c9-6665-407a-b24c-6182df297df7" />
 <img width="1920" height="1128" alt="Screenshot 2025-10-20 115957" src="https://github.com/user-attachments/assets/7fcf47f7-76bb-42dd-ab70-d344f4f83893" />
@@ -82,6 +82,7 @@ Di bagian bawah halaman terdapat Google Maps Integration yang menampilkan lokasi
 
 ## Link YouTube
 https://youtu.be/cDLyuAB6Kk4
+
 
 
 
